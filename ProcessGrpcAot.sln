@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessGrpcAot", "ProcessGrpcAot\ProcessGrpcAot.csproj", "{547C7505-B57E-477A-9318-CEB1BA3BB56B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{DF5CD76D-FD4C-44B7-9EA8-42ECB12EB496}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{547C7505-B57E-477A-9318-CEB1BA3BB56B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{547C7505-B57E-477A-9318-CEB1BA3BB56B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{547C7505-B57E-477A-9318-CEB1BA3BB56B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{547C7505-B57E-477A-9318-CEB1BA3BB56B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5CD76D-FD4C-44B7-9EA8-42ECB12EB496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5CD76D-FD4C-44B7-9EA8-42ECB12EB496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5CD76D-FD4C-44B7-9EA8-42ECB12EB496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5CD76D-FD4C-44B7-9EA8-42ECB12EB496}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
