@@ -12,7 +12,7 @@ builder.WebHost.UseKestrel(s =>
     s.ListenNamedPipe("swatch");
     s.ListenUnixSocket(socketPath);
 });
-builder.Services.AddNamedPipeTransportFactory();
+//builder.Services.AddNamedPipeTransportFactory();
 builder.Services.AddGrpc();
 
 var app = builder.Build();

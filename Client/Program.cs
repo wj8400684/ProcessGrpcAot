@@ -1,6 +1,11 @@
-﻿using Client;
+﻿using BenchmarkDotNet.Running;
+using Client;
 using Grpc.Net.Client;
 using ProcessGrpcAot;
+
+BenchmarkRunner.Run<Test>();
+
+Console.ReadKey();
 
 var client = NamedPipesConnectionFactory.CreateChannel("swatch");
 
