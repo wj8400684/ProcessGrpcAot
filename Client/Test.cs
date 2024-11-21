@@ -15,7 +15,19 @@ public class Test
         var client = UnixDomainSocketsConnectionFactory.CreateChannel();
 
         _unixClient = new Greeter.GreeterClient(client);
-        
+
         _namePipeClient = new Greeter.GreeterClient(NamedPipesConnectionFactory.CreateChannel("swatch"));
+    }
+
+    [Benchmark]
+    public async ValueTask Unix()
+    {
+        await _unixClient.SayHelloAsync(new HelloRequest { Name = "John Doe" });
+    }
+    
+    [Benchmark]
+    public async ValueTask NamedPipe()
+    {
+        await _namePipeClient.SayHelloAsync(new HelloRequest { Name = "John Doe" });
     }
 }
