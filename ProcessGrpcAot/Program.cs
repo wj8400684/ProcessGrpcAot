@@ -9,10 +9,10 @@ if (Path.Exists(socketPath))
 var builder = WebApplication.CreateSlimBuilder(args);
 builder.WebHost.UseKestrel(s =>
 {
-    s.ListenNamedPipe("swatch");
+    s.ListenNamedPipe("swatch1");
     s.ListenUnixSocket(socketPath);
 });
-//builder.Services.AddNamedPipeTransportFactory();
+builder.Services.AddNamedPipeTransportFactory();
 builder.Services.AddGrpc();
 
 var app = builder.Build();

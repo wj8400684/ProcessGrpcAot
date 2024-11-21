@@ -16,7 +16,7 @@ public class Test
 
         _unixClient = new Greeter.GreeterClient(client);
 
-        _namePipeClient = new Greeter.GreeterClient(NamedPipesConnectionFactory.CreateChannel("swatch"));
+        _namePipeClient = new Greeter.GreeterClient(NamedPipesConnectionFactory.CreateChannel("swatch1"));
     }
 
     [Benchmark]
